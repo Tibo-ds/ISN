@@ -9,6 +9,10 @@ def changement(couleur, pixel):
 
 messageACacher = "101010011001011001010010010110101001100101100101001001011010100110010110010100100101"
 print(len(messageACacher))
+if len(messageACacher)%3> 0:
+    for loop in range(len(messageACacher)%3):
+        messageACacher += "0"
+ 
 messageACacher = str(messageACacher)
 im = open('image.png')
 x = 0
